@@ -4,7 +4,7 @@ export default function Testing() {
     const [usernames, setUsernames] = useState([])
 
     function getHello() {
-        fetch('https://mynextapp-theta.vercel.app//api/users')
+        fetch('https://mynextapp-theta.vercel.app/api/users')
             .then(response => {
                 console.log(response)
                 return response.json()
