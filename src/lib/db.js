@@ -5,7 +5,8 @@ const db = mysql({
         host: process.env.DB_HOST,
         database: process.env.DB,
         user: process.env.DB_USERNAME,
-        password: process.env.DB_PASSWORD
+        password: process.env.DB_PASSWORD,
+        ssl: { rejectUnauthorized: true }
     }
 })
 
