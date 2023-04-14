@@ -4,9 +4,7 @@ export default function Testing() {
     const [usernames, setUsernames] = useState([])
 
     function getHello() {
-        fetch('http://localhost:3000/api/users', {
-            mode: 'no-cors'
-        })
+        fetch('http://localhost:3000/api/users')
             .then(response => {
                 console.log(response)
                 return response.json()
